@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "parcel build src/index.html --no-source-maps",
+    "prebuild:dev": "rimraf dist",
+    "build:dev": "parcel src/index.html",
     "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "parcel": "^2.8.2",
+    "rimraf": "^4.0.4"
   }
 }
