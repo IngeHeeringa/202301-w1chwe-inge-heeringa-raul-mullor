@@ -1,8 +1,10 @@
 @use "reset/reset";
+@use "hero-section/hero-section";
 @use "hero-section/main";
 @use "hero-section/header";
 @use "variables/colors";
 @use "variables/fonts";
+@use "components/section";
 
 $base-size: 16;
 @function toRem($target, $context: $base-size) {
@@ -24,41 +26,4 @@ h2,
 h3 {
   font-family: fonts.$font-display;
   font-weight: 400;
-}
-
-.section {
-  min-height: 100vh;
-  background-color: #fff;
-  padding: toRem(16);
-
-  &__title {
-    font-size: 2.5rem;
-    color: colors.$color-text--dark;
-
-    &::after {
-      content: "";
-      display: block;
-      background-color: colors.$color-primary--dark;
-      width: 80%;
-      height: toRem(3);
-      margin: toRem(20) 0;
-    }
-
-    &--hero {
-      color: #fff;
-
-      &::after {
-        display: none;
-      }
-    }
-  }
-
-  &__subtitle {
-    font-size: 1.125rem;
-    color: colors.$color-text--light;
-
-    &--hero {
-      color: #fff;
-    }
-  }
 }

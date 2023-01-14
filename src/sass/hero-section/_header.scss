@@ -1,4 +1,4 @@
-.main-header {
+.hero__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-header__navigation {
+  .hero__header__navigation {
     display: none;
   }
 }
