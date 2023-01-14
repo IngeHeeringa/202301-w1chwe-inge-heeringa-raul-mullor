@@ -7,8 +7,7 @@
 @use "components/section";
 @use "components/navigation-buttons";
 
-$base-size: 16;
-@function toRem($target, $context: $base-size) {
+@function toRem($target, $context: 16) {
   @return ($target / $context) * 1rem;
 }
 
