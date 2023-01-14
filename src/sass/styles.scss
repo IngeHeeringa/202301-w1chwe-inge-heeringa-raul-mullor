@@ -1,2 +1,11 @@
 @use "reset/reset";
 @use "hero-section/main";
+
+$base-size: 16;
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1em;
+}
+
+body {
+  margin: size(100);
+}
