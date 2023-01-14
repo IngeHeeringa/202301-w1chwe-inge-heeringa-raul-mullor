@@ -1,0 +1,11 @@
+$base-size: 16;
+@function toRem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: toRem(40);
+}

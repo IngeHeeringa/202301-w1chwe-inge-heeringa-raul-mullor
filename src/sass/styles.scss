@@ -5,6 +5,7 @@
 @use "variables/colors";
 @use "variables/fonts";
 @use "components/section";
+@use "components/navigation-buttons";
 
 $base-size: 16;
 @function toRem($target, $context: $base-size) {
