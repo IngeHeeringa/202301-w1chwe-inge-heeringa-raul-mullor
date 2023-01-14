@@ -1,18 +1,60 @@
-.hero {
+@use "../variables/colors";
+@use "../variables/fonts";
+@use "../functions/pxtorem";
+
+.hero-main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
 }
 
+.hero__titles {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .hero-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  height: 33rem;
+  margin: 6.25rem 0;
+  background-color: #fff;
+  border-radius: 1rem;
+
   &__label {
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
+    font-family: fonts.$font-primary;
+    font-size: 0.875rem;
+    padding: 1.25rem;
+    color: colors.$color-text--light;
+
+    input {
+      font-family: fonts.$font-display;
+      font-size: 0.875rem;
+      color: colors.$color-text--dark;
+      outline: none;
+      border: none;
+      margin-top: 0.5rem;
+      border-bottom: 1px solid colors.$color-text--dark;
+    }
   }
 
   &__button {
+    display: flex;
+    justify-content: space-around;
     width: 100%;
+    padding: 2.5rem 1.25rem;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 2.25rem;
+    color: #fff;
+    background-color: colors.$color-primary--dark;
+    font-family: fonts.$font-display;
   }
 }
