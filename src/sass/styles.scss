@@ -1,5 +1,6 @@
 @use "reset/reset";
 @use "hero-section/main";
+@use "hero-section/header";
 @use "variables/colors";
 @use "variables/fonts";
 
@@ -26,8 +27,16 @@ section {
 
 .section-title {
   font-size: 2.5rem;
+
+  &--hero {
+    color: #fff;
+  }
 }
 
 .section-subtitle {
   font-size: 1.125rem;
+
+  &--hero {
+    color: #fff;
+  }
 }
