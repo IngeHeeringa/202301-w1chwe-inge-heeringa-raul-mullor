@@ -1,5 +1,4 @@
-@use "sass:math";
-
-@function toRem($pixels) {
-  @return math.div($pixels, 16px) * 1rem;
+$base-size: 16;
+@function toRem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
 }
