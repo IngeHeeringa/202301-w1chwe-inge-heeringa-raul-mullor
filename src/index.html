@@ -12,73 +12,51 @@
 </head>
 
 <body>
-
-  <header class="main-header">
-    <div class="main-header__logos">
-      <img src="media/Vector.png" alt="Vector" width="24.36" height="27.29">
-      <img src="media/Travellian.png" alt="Travellian" width="111.72" height="20.45">
-    </div>
-    <nav class="main-header__navigation navigation">
-      <ul class="">
-        <li><a href="">Home</a></li>
-        <li><a href="">Explore</a></li>
-        <li><a href="">Travel</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Pricing</a></li>
-      </ul>
-    </nav>
-    <img src="media/hamburger.png" alt="hamburger">
-  </header>
-  <main class="hero">
-    <div class="hero__titles section-titles">
-      <h1 class="section-title section-title--hero">Start your unforgettable journey with us.</h1>
-      <span class="section-subtitle subtitle--hero">The best travel for your journey begins now</span>
-    </div>
-    <form class="hero-form">
-      <label class="hero-form__label">
-        Destination
-        <input type="text" value="Dubai">
-      </label>
-      <label class="hero-form__label">
-        Person
-        <input type="number" value="2">
-      </label>
-      <label class="hero-form__label">
-        Check in
-        <input type="date" value="2018-07-22">
-      </label>
-      <label class="hero-form__label">
-        Check out
-        <input type="date" value="2018-07-22">
-      </label>
-      <button class="hero-form__button" type="submit">Book Now</button>
-    </form>
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="hero-section">
+    <header class="main-header">
+      <div class="main-header__logos">
+        <img src="media/Vector.png" alt="Vector" width="24.36" height="27.29">
+        <img src="media/Travellian.png" alt="Travellian" width="111.72" height="20.45">
+      </div>
+      <nav class="main-header__navigation navigation">
+        <ul class="">
+          <li><a href="">Home</a></li>
+          <li><a href="">Explore</a></li>
+          <li><a href="">Travel</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+      </nav>
+      <img src="media/hamburger.png" alt="hamburger">
+    </header>
+    <main class="hero__main hero">
+      <div class="hero__titles section-titles">
+        <h1 class="section-title section-title--hero">Start your unforgettable journey with us.</h1>
+        <span class="section-subtitle subtitle--hero">The best travel for your journey begins now</span>
+      </div>
+      <form class="hero__form">
+        <div class="hero__form__inputs">
+          <label class="hero__form__label">
+            Destination
+            <input type="text" value="Dubai">
+          </label>
+          <label class="hero__form__label">
+            Person
+            <input type="number" value="2">
+          </label>
+          <label class="hero__form__label">
+            Check in
+            <input type="date" value="2020-09-17">
+          </label>
+          <label class="hero__form__label">
+            Check out
+            <input type="date" value="2020-10-17">
+          </label>
+        </div>
+        <button class="hero__form__button" type="submit">Book Now<span><img src="media/arrow-hero.png"></span></button>
+      </form>
+    </main>
+  </section>
 </body>
 
 </html>
