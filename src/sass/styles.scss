@@ -4,7 +4,8 @@
 @use "variables/fonts";
 
 body {
-  background: url(../media/main-photo.webp) no-repeat center center fixed;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../media/main-photo.webp) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,4 +17,17 @@ h1,
 h2,
 h3 {
   font-family: fonts.$font-display;
+  font-weight: 400;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.section-title {
+  font-size: 2.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
 }
