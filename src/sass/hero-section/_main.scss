@@ -1,5 +1,6 @@
 @use "../variables/colors";
 @use "../variables/fonts";
+@use "../functions/pxtorem";
 
 .hero-main {
   display: flex;
