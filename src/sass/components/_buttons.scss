@@ -1,3 +1,6 @@
+@use "../functions/torem";
+@use "../variables/colors";
+
 .button {
   padding: torem.toRem(16) torem.toRem(24);
   background-color: colors.$color-primary--dark;
@@ -11,4 +14,11 @@
   &--transparent {
     background-color: transparent;
   }
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: torem.toRem(40);
 }
