@@ -1,8 +1,12 @@
-.main-header {
+@function toRem($target, $context: 16) {
+  @return ($target / $context) * 1rem;
+}
+
+.hero__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1.5rem 0;
+  padding: toRem(24) 0;
 
   &__logos {
     display: flex;
@@ -11,7 +15,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .main-header__navigation {
+  .hero__header__navigation {
     display: none;
   }
 }

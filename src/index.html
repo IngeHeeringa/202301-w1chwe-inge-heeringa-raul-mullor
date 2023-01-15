@@ -13,13 +13,13 @@
 
 <body>
   <section class="hero-section">
-    <header class="main-header">
-      <div class="main-header__logos">
+    <header class="hero__header">
+      <div class="hero__header__logos">
         <img src="media/Vector.png" alt="Vector" width="24.36" height="27.29">
         <img src="media/Travellian.png" alt="Travellian" width="111.72" height="20.45">
       </div>
-      <nav class="main-header__navigation navigation">
-        <ul class="">
+      <nav class="hero__header__navigation navigation">
+        <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Explore</a></li>
           <li><a href="">Travel</a></li>
@@ -31,11 +31,11 @@
     </header>
     <main class="hero__main hero">
       <div class="hero__titles section-titles">
-        <h1 class="section-title section-title--hero">Start your unforgettable journey with us.</h1>
-        <span class="section-subtitle subtitle--hero">The best travel for your journey begins now</span>
+        <h1 class="section__title section__title--hero">Start your unforgettable journey with us.</h1>
+        <span class="section__subtitle section__subtitle--hero">The best travel for your journey begins now</span>
       </div>
       <form class="hero__form">
-        <div class="hero__form__inputs">
+        <div>
           <label class="hero__form__label">
             Destination
             <input type="text" value="Dubai">
@@ -59,26 +59,57 @@
   </section>
 
 
-  <ul class="destinations">
-    <li>
-      <article class="destinations__article destinations-card">
-        <img class="destinations-card__photo" src="media/li-photo1.jpg" alt="Berlín">
-        <div class="destinations-card__text destinations-text">
-          <h3 class="destinations-text__title">Monument of Berlin</h3>
-          <span class="destinations-text__location">
-            <img class="location-icon" src="media/location-icon.svg" alt="">
-            Berlin,Germany
-          </span>
-        </div>
-
-      </article>
-    </li>
-    <li></li>
-    <li></li>
-  </ul>
 
 
 
+
+  <section class="destinations section">
+    <div class="section__titles">
+      <h2 class="section__title">Popular Destinations</h2>
+      <span class="section__subtitle">Most popular destinations around the world, from historical places
+        to natural wonders.</span>
+    </div>
+    <ul class="destinations">
+      <li>
+        <article class="destinations__article destinations-card">
+          <img class="destinations-card__photo" src="media/li-photo1.jpg" alt="Berlín">
+          <div class="destinations-card__text destinations-text">
+            <h3 class="destinations-text__title">Monument of Berlin</h3>
+            <span class="destinations-text__location">
+              <img class="location-icon" src="media/location-icon.svg" alt="">
+              Berlin,Germany
+            </span>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div class="navigation-buttons">
+      <a href=""><img src="media/navbutton-left.svg" alt="Navigation button pointing left"></a>
+      <a href=""><img src="media/navbutton-right.svg" alt="Navigation button pointing right"></a>
+    </div>
+  </section>
+  <section class="our-blog section">
+    <div class="section__titles">
+      <h2 class="section__title">Our Blog</h2>
+      <span class="section__subtitle">An insight the incredible experience in the world</span>
+    </div>
+    <article class="our-blog__article">
+      <img class="our-blog__article__photo" src="media/blog-photo.jpg">
+      <div class="our-blog__article__text">
+        <h3 class="section__title">Beautiful Italy Let’s travel</h3>
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give
+          you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
+          master-
+          builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but
+          because those
+          who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again
+          is there
+          anyone who loves or pursues.</p>
+        <a href="">Read More<span><img src="media/our-blog-arrow.svg"></span></a>
+      </div>
+    </article>
+  </section>
 </body>
 
 </html>

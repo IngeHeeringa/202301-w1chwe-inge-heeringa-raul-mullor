@@ -1,0 +1,42 @@
+@use "../variables/colors";
+
+@function toRem($target, $context: 16) {
+  @return ($target / $context) * 1rem;
+}
+
+.section {
+  padding: toRem(100) toRem(16);
+  background-color: #fff;
+  gap: toRem(100);
+
+  &__title {
+    font-size: 2.5rem;
+    color: colors.$color-text--dark;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: colors.$color-primary--dark;
+      width: 80%;
+      height: toRem(3);
+      margin: toRem(20) 0;
+    }
+
+    &--hero {
+      color: #fff;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.125rem;
+    color: colors.$color-text--light;
+
+    &--hero {
+      color: #fff;
+    }
+  }
+}
