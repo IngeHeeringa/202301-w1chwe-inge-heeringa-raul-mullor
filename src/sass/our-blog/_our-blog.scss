@@ -1,40 +1,36 @@
-@use "../variables/colors";
-
-@function toRem($target, $context: 16) {
-  @return ($target / $context) * 1rem;
-}
+@use "../functions/torem";
 
 .blog-article {
   display: flex;
   flex-direction: column;
-  gap: toRem(32);
+  gap: torem.toRem(32);
 
   &__photo {
-    border-radius: toRem(16);
+    border-radius: torem.toRem(16);
     object-fit: cover;
-    height: toRem(314);
+    height: torem.toRem(314);
   }
 
   .blog-text {
     display: flex;
     flex-direction: column;
-    gap: toRem(24);
+    gap: torem.toRem(24);
 
     &__title::after {
       display: none;
     }
 
     &__paragraph {
-      font-size: toRem(18);
-      line-height: toRem(42);
+      font-size: torem.toRem(18);
+      line-height: torem.toRem(42);
     }
 
     a {
-      font-size: toRem(24);
+      font-size: torem.toRem(24);
       color: colors.$color-primary--dark;
 
       span {
-        padding-left: toRem(20);
+        padding-left: torem.toRem(20);
       }
     }
   }
