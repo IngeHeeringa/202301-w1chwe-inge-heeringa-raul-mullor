@@ -2,21 +2,24 @@
 @use "../variables/fonts";
 
 footer {
+  height: torem.toRem(1071.61);
   min-height: 100vh;
-  display: flex;
   padding-left: torem.toRem(16);
   color: #fff;
-  flex-direction: column;
   justify-content: space-between;
   background-color: #172432;
+  padding-top: torem.toRem(80);
+  padding-bottom: torem.toRem(84);
 }
 
 .part-footer {
   display: flex;
   flex-direction: column;
   gap: torem.toRem(12);
+
   &__title {
     font-family: fonts.$font-primary;
+    font-size: torem.toRem(28);
     font-weight: bold;
   }
 }
@@ -25,13 +28,24 @@ footer {
   display: flex;
   flex-direction: column;
   gap: torem.toRem(12);
+  font-size: torem.toRem(18);
 }
+
 .head-footer {
   display: flex;
   flex-direction: column;
+
+  &__logos {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.Icons {
+.icons {
   gap: torem.toRem(28);
   display: flex;
+}
+
+.copyright-text {
+  font-size: torem.toRem(14);
 }
