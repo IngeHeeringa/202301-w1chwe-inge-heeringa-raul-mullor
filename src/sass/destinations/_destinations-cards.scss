@@ -1,8 +1,11 @@
 @use "../functions/torem";
 
+.destinations-section {
+  position: relative;
+}
+
 .destinations {
   display: flex;
-  justify-content: center;
 }
 
 .destinations-card {
@@ -37,5 +40,21 @@
     display: flex;
     font-size: torem.toRem(18);
     gap: torem.toRem(19.56);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    gap: torem.toRem(32);
+    overflow: hidden;
+  }
+
+  .destinations-card {
+    height: torem.toRem(661);
+    width: torem.toRem(497);
+
+    &__photo {
+      height: torem.toRem(661);
+    }
   }
 }

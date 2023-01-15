@@ -1,0 +1,9 @@
+@use "../functions/torem";
+
+@media screen and (min-width: 768px) {
+  .destinations-section__navigation-buttons {
+    position: absolute;
+    top: torem.toRem(151);
+    right: 0;
+  }
+}
