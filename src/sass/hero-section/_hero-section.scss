@@ -1,9 +1,7 @@
-@function toRem($target, $context: 16) {
-  @return ($target / $context) * 1rem;
-}
+@use "../functions/torem";
 
 .hero-section {
   justify-content: space-evenly;
-  gap: 6.25rem;
-  padding: 0 toRem(16) toRem(100);
+  gap: torem.toRem(100);
+  padding: 0 torem.toRem(16) torem.toRem(100);
 }
