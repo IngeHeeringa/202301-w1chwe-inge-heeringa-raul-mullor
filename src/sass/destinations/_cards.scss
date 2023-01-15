@@ -9,12 +9,12 @@
 
 .destinations-card {
   display: flex;
-  height: totoRem(320);
+  height: torem.toRem(320);
   width: 288px;
 
   &__photo {
     width: 100%;
-    border-radius: toRem(16);
+    border-radius: torem.toRem(16);
     object-fit: cover;
   }
 }
@@ -24,18 +24,18 @@
   position: absolute;
   flex-direction: column;
   bottom: 0;
-  padding-left: toRem(20);
+  padding-left: torem.toRem(20);
   color: #fff;
-  padding-bottom: toRem(41.5);
-  gap: toRem(16);
+  padding-bottom: torem.toRem(41.5);
+  gap: torem.toRem(16);
 
   &__title {
-    font-size: toRem(24);
+    font-size: torem.toRem(24);
   }
 
   &__location {
     display: flex;
-    font-size: toRem(18);
-    gap: toRem(19.56);
+    font-size: torem.toRem(18);
+    gap: torem.toRem(19.56);
   }
 }
