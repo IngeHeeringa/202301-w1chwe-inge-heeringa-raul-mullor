@@ -1,0 +1,41 @@
+@use "../functions/torem";
+
+.destinations {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: toRem(100);
+}
+
+.destinations-card {
+  display: flex;
+  height: totoRem(320);
+  width: 288px;
+
+  &__photo {
+    width: 100%;
+    border-radius: toRem(16);
+    object-fit: cover;
+  }
+}
+
+.destinations-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  padding-left: toRem(20);
+  color: #fff;
+  padding-bottom: toRem(41.5);
+  gap: toRem(16);
+
+  &__title {
+    font-size: toRem(24);
+  }
+
+  &__location {
+    display: flex;
+    font-size: toRem(18);
+    gap: toRem(19.56);
+  }
+}
