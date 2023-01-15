@@ -1,0 +1,37 @@
+@use "../functions/torem";
+@use "../variables/fonts";
+
+footer {
+  min-height: 100vh;
+  display: flex;
+  padding-left: torem.toRem(16);
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #172432;
+}
+
+.part-footer {
+  display: flex;
+  flex-direction: column;
+  gap: torem.toRem(12);
+  &__title {
+    font-family: fonts.$font-primary;
+    font-weight: bold;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: torem.toRem(12);
+}
+.head-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Icons {
+  gap: torem.toRem(28);
+  display: flex;
+}
