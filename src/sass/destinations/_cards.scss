@@ -1,20 +1,20 @@
 @use "../functions/torem";
-@use "../functions/torem";
 
 .destinations {
   display: flex;
   position: relative;
   justify-content: center;
+  margin-bottom: toRem(100);
 }
 
 .destinations-card {
   display: flex;
-  height: torem.toRem(320);
-  width: torem.toRem(288);
+  height: totoRem(320);
+  width: 288px;
 
   &__photo {
     width: 100%;
-    border-radius: torem.toRem(16);
+    border-radius: toRem(16);
     object-fit: cover;
   }
 }
