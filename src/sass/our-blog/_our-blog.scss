@@ -37,3 +37,16 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .blog-article {
+    flex-direction: row;
+    align-items: center;
+
+    &__photo {
+      object-fit: cover;
+      width: 50%;
+      height: 100%;
+    }
+  }
+}
