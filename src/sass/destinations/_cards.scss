@@ -1,7 +1,4 @@
-$base-size: 16;
-@function toRem($target, $context: $base-size) {
-  @return ($target / $context) * 1rem;
-}
+@use "../functions/torem";
 
 .destinations {
   display: flex;
@@ -11,12 +8,12 @@ $base-size: 16;
 
 .destinations-card {
   display: flex;
-  height: 320px;
-  width: 288px;
+  height: torem.toRem(320);
+  width: torem.toRem(288);
 
   &__photo {
     width: 100%;
-    border-radius: toRem(16);
+    border-radius: torem.toRem(16);
     object-fit: cover;
   }
 }

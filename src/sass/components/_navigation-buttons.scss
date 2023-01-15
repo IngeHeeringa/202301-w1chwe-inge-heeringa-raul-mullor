@@ -1,9 +1,8 @@
-@function toRem($target, $context: 16) {
-  @return ($target / $context) * 1rem;
-}
+@use "../functions/torem";
+
 .navigation-buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: toRem(40);
+  gap: torem.toRem(40);
 }

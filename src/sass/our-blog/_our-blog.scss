@@ -1,8 +1,5 @@
 @use "../variables/colors";
-
-@function toRem($target, $context: 16) {
-  @return ($target / $context) * 1rem;
-}
+@use "../functions/torem";
 
 .our-blog {
   &__article {
@@ -15,15 +12,15 @@
 
     &__text {
       p {
-        font-size: toRem(18);
-        line-height: toRem(42);
+        font-size: torem.toRem(18);
+        line-height: torem.toRem(42);
       }
       a {
-        font-size: toRem(24);
+        font-size: torem.toRem(24);
         color: colors.$color-primary--dark;
 
         span {
-          padding-left: toRem(20);
+          padding-left: torem.toRem(20);
         }
       }
     }
