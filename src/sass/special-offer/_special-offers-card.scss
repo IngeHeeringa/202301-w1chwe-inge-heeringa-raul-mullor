@@ -1,0 +1,61 @@
+@use "../functions/torem";
+@use "../variables/colors";
+@use "../variables/fonts";
+
+.special-offers {
+  display: flex;
+  justify-content: center;
+}
+
+.offers-card {
+  display: flex;
+  flex-direction: column;
+
+  &__photo {
+    width: 100%;
+    object-fit: cover;
+    border-radius: torem.toRem(16) torem.toRem(16) 0 0;
+    height: torem.toRem(286);
+  }
+}
+
+.offers-text {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$color-primary--extra-light;
+  border-radius: 0 0 torem.toRem(16) torem.toRem(16);
+  gap: torem.toRem(24);
+  padding: torem.toRem(20);
+
+  &__title {
+    font-family: fonts.$font-secondary;
+    font-size: torem.toRem(28);
+    color: colors.$color-text--light;
+  }
+
+  &__content {
+    line-height: torem.toRem(20);
+  }
+
+  &__price {
+    font-size: torem.toRem(18);
+    color: colors.$color-text--light;
+    display: flex;
+    align-items: center;
+    gap: torem.toRem(8);
+
+    span {
+      font-size: torem.toRem(32);
+      color: colors.$color-primary--dark;
+    }
+  }
+
+  &__button {
+    text-transform: uppercase;
+    background-color: colors.$color-primary--dark;
+    color: #fff;
+    width: fit-content;
+    padding: torem.toRem(16) torem.toRem(24);
+    border-radius: torem.toRem(12);
+  }
+}

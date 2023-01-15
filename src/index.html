@@ -12,24 +12,28 @@
 </head>
 
 <body>
-  <section class="hero-section">
+  <main class="hero-section">
     <header class="hero-section__header main-header">
       <div class="main-header__logos">
-        <img src="media/logo.svg" alt="Vector" width="24.36" height="27.29">
-        <img src="media/travellian.svg" alt="Travellian" width="111.72" height="20.45">
+        <img src="media/logo.svg" alt="Travellian logo icon" width="24" height="27">
+        <img src="media/travellian.svg" alt="Travellian logo text" width="111" height="20">
       </div>
       <nav class="main-header__navigation main-navigation">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Explore</a></li>
-          <li><a href="">Travel</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Pricing</a></li>
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#destinations">Explore</a></li>
+          <li><a href="#travel">Travel</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="pricing">Pricing</a></li>
         </ul>
       </nav>
-      <img src="media/menu-icon.svg" alt="Menu">
+      <div class="main-header__user-buttons user-buttons">
+        <span class="user-buttons__login"><a href="login">Login</a></span>
+        <span class="user-buttons__sign-up"><a href="sign-up">Sign up</a></span>
+      </div>
+      <img class="main-header__menu-icon" src="media/menu-icon.svg" alt="Menu">
     </header>
-    <main class="hero__main hero">
+    <div class="hero__main hero">
       <div class="section__header section-header">
         <h1 class="section-header__heading section-header__heading--hero">Start your unforgettable journey with us.</h1>
         <span class="section-header__subtitle section-header__subtitle--hero">The best travel for your journey begins
@@ -54,21 +58,22 @@
             <input type="date" value="2020-10-17">
           </label>
         </div>
-        <button class="booking-form__button" type="submit">Book Now<span><img
-              src="media/arrow-hero.png"></span></button>
+        <button class="booking-form__button" type="submit">Book Now<span><img src="media/arrow-hero.png"
+              alt="Arrow pointing right"></span></button>
       </form>
-    </main>
-  </section>
-  <section class="destinations section">
+    </div>
+  </main>
+  <section class="destinations-section section" id="destinations">
     <div class="section__header section-header">
       <h2 class="section-header__heading">Popular Destinations</h2>
       <span class="section-header__subtitle">Most popular destinations around the world, from historical places
         to natural wonders.</span>
     </div>
-    <ul class="destinations">
+    <ul class="destination-section__destinations destinations">
       <li>
         <article class="destinations__article destinations-card">
-          <img class="destinations-card__photo" src="media/li-photo1.jpg" alt="Berlín">
+          <img class="destinations-card__photo" src="media/li-photo1.webp"
+            alt="Building in classical style by a riverside in Berlin" width="497" height="661">
           <div class="destinations-card__text destinations-text">
             <h3 class="destinations-text__title">Monument of Berlin</h3>
             <span class="destinations-text__location">
@@ -78,22 +83,82 @@
           </div>
         </article>
       </li>
+      <li>
+        <article class="destinations__article destinations-card">
+          <img class="destinations-card__photo" src="media/li-photo2.webp"
+            alt="People crossing the Millenium Bridge with St Paul's Cathedral in the back" width="497" height="661">
+          <div class="destinations-card__text destinations-text">
+            <h3 class="destinations-text__title">Millennium Bridge</h3>
+            <span class="destinations-text__location">
+              <img class="location-icon" src="media/location-icon.svg" alt="">
+              London, United Kingdom
+            </span>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="destinations__article destinations-card">
+          <img class="destinations-card__photo" src="media/li-photo3.webp"
+            alt="Gondolas passing under the Rialdo Bridge over a canal" width="497" height="661">
+          <div class="destinations-card__text destinations-text">
+            <h3 class="destinations-text__title">Rialto Bridge</h3>
+            <span class="destinations-text__location">
+              <img class="location-icon" src="media/location-icon.svg" alt="">
+              Venice, Italy
+            </span>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div class="destinations-section__navigation-buttons navigation-buttons">
+      <button><img src="media/navbutton-left.svg" alt="Navigation button pointing left"></button>
+      <button><img src="media/navbutton-right.svg" alt="Navigation button pointing right"></button>
+    </div>
+  </section>
+  <section class="special-offer section" id="travel">
+    <div class="section__header section-header">
+      <h2 class="section-header__heading">Special Offer</h2>
+      <span class="section-header__subtitle">Check out our special offer and discounts</span>
+    </div>
+    <ul class="special-offers">
+      <li>
+        <article class="special-offers__article offers-card">
+          <img class="offers-card__photo" src="media/article-photo1.webp" alt="Sunset over rooftops in Lisbon">
+          <div class="offers-card__text offers-text">
+            <h3 class="offers-text__title">Lisbon, Portugal</h3>
+            <div>
+              <img src="media/star.svg" alt="Review star" width="20" height="20">
+              <img src="media/star.svg" alt="Review star" width="20" height="20">
+              <img src="media/star.svg" alt="Review star" width="20" height="20">
+              <img src="media/star.svg" alt="Review star" width="20" height="20">
+              <img src="media/star.svg" alt="Review star" width="20" height="20">
+            </div>
+            <p class="offers-text__content">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+              popular
+              during the renaissance.
+              Passage and
+              going through the cites of the world in classical literature.</p>
+            <span class="offers-text__price">From <span>€500</span></span>
+            <div class="offers-text__button"><a href="">Details</a></div>
+          </div>
+        </article>
+      </li>
     </ul>
     <div class="navigation-buttons">
       <a href=""><img src="media/navbutton-left.svg" alt="Navigation button pointing left"></a>
       <a href=""><img src="media/navbutton-right.svg" alt="Navigation button pointing right"></a>
     </div>
   </section>
-  <section class="our-blog section">
+  <section class="our-blog section" id="blog">
     <div class="section-header header">
       <h2 class="section-header__heading">Our Blog</h2>
       <span class="section-header__subtitle">An insight the incredible experience in the world</span>
     </div>
     <article class="our-blog__article blog-article">
-      <img class="blog-article__photo" src="media/blog-photo.jpg">
+      <img class="blog-article__photo" src="media/blog-photo.webp" alt="Cape village in Italy surrounded by mountains">
       <div class="blog-article__text blog-text">
-        <h3 class="section-header__heading blog-text__title">Beautiful Italy Let’s travel</h3>
-        <p class="blog-text__paragraph">But I must explain to you how all this mistaken idea of denouncing pleasure and
+        <h3 class="section-header__heading blog-text__title">Beautiful Italy<br>Let’s travel</h3>
+        <p class="blog-text__content">But I must explain to you how all this mistaken idea of denouncing pleasure and
           praising pain was born and I
           will give
           you a complete account of the system and expound the actual teachings of the great explorer of the truth, the
@@ -103,7 +168,7 @@
           who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again
           is there
           anyone who loves or pursues.</p>
-        <a href="">Read More<span><img src="media/our-blog-arrow.svg"></span></a>
+        <a href="">Read More<span><img src="media/our-blog-arrow.svg" alt="Arrow pointing right"></span></a>
       </div>
     </article>
   </section>

@@ -1,0 +1,60 @@
+@use "../functions/torem";
+
+.destinations-section {
+  position: relative;
+}
+
+.destinations {
+  display: flex;
+}
+
+.destinations-card {
+  display: flex;
+  position: relative;
+  height: torem.toRem(320);
+  width: torem.toRem(288);
+
+  &__photo {
+    width: 100%;
+    border-radius: torem.toRem(16);
+    height: torem.toRem(320);
+    object-fit: cover;
+  }
+}
+
+.destinations-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  bottom: 0;
+  padding-left: torem.toRem(20);
+  color: #fff;
+  padding-bottom: torem.toRem(41.5);
+  gap: torem.toRem(16);
+
+  &__title {
+    font-size: torem.toRem(24);
+  }
+
+  &__location {
+    display: flex;
+    font-size: torem.toRem(18);
+    gap: torem.toRem(19.56);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    gap: torem.toRem(32);
+    overflow: hidden;
+  }
+
+  .destinations-card {
+    height: torem.toRem(661);
+    width: torem.toRem(497);
+
+    &__photo {
+      height: torem.toRem(661);
+    }
+  }
+}

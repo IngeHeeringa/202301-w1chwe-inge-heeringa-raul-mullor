@@ -15,6 +15,7 @@ ul,
 ol,
 li {
   margin: 0;
+  font-weight: 400;
 }
 
 a,
@@ -32,4 +33,6 @@ ol {
 button {
   font-family: inherit;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }

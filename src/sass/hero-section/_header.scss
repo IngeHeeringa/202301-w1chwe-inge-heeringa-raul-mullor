@@ -1,4 +1,5 @@
 @use "../functions/torem";
+@use "../variables/colors";
 
 .main-header {
   display: flex;
@@ -10,10 +11,52 @@
     display: flex;
     align-items: center;
   }
+
+  &__navigation {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .main-header__navigation {
+.user-buttons {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header__menu-icon {
     display: none;
+  }
+
+  .main-navigation {
+    display: block;
+
+    ul {
+      display: flex;
+      color: #fff;
+      gap: torem.toRem(32);
+
+      li:first-child::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background-color: colors.$color-primary--dark;
+        margin: torem.toRem(8) 0;
+      }
+    }
+  }
+
+  .user-buttons {
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    &__login {
+      padding: torem.toRem(16) torem.toRem(24);
+    }
+
+    &__sign-up {
+      background-color: colors.$color-primary--dark;
+      padding: torem.toRem(16) torem.toRem(24);
+      border-radius: torem.toRem(12);
+    }
   }
 }

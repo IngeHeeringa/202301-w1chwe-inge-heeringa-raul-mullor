@@ -5,19 +5,27 @@
 @use "our-blog/our-blog";
 @use "variables/colors";
 @use "variables/fonts";
-@use "destinations/cards";
+@use "destinations/destinations";
+@use "destinations/destinations-cards";
+@use "special-offer/special-offers-card";
 @use "components/section";
 @use "components/navigation-buttons";
 @use "footer/footer";
 @use "functions/torem";
 
-body {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../media/main-photo-desktop.jpeg) no-repeat center center fixed;
-  background-size: cover;
-  font-family: fonts.$font-primary;
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../media/main-photo-desktop.webp) no-repeat left fixed;
+  background-size: 400%;
+  font-family: fonts.$font-primary;
+  font-size: torem.toRem(16);
+}
+
+main,
 section {
   min-height: 100vh;
   display: flex;
@@ -31,10 +39,10 @@ h3 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (min-width: 748px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../media/main-photo-desktop.jpeg) no-repeat left fixed;
-    background-size: 400%;
+      url(../media/main-photo-desktop.webp) no-repeat center 80% fixed;
+    background-size: cover;
   }
 }

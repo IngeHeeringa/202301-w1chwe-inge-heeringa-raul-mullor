@@ -8,9 +8,13 @@
 }
 
 .section-header {
+  display: flex;
+  flex-direction: column;
+
   &__heading {
     font-size: torem.toRem(40);
     color: colors.$color-text--dark;
+    width: fit-content;
 
     &::after {
       content: "";
