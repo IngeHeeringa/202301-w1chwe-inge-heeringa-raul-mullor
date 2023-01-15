@@ -4,27 +4,37 @@
   @return ($target / $context) * 1rem;
 }
 
-.our-blog {
-  &__article {
+.blog-article {
+  display: flex;
+  flex-direction: column;
+  gap: toRem(32);
+
+  &__photo {
+    border-radius: toRem(16);
+    object-fit: cover;
+    height: toRem(314);
+  }
+
+  .blog-text {
     display: flex;
     flex-direction: column;
+    gap: toRem(24);
 
-    &__photo {
-      width: 100%;
+    &__title::after {
+      display: none;
     }
 
-    &__text {
-      p {
-        font-size: toRem(18);
-        line-height: toRem(42);
-      }
-      a {
-        font-size: toRem(24);
-        color: colors.$color-primary--dark;
+    &__paragraph {
+      font-size: toRem(18);
+      line-height: toRem(42);
+    }
 
-        span {
-          padding-left: toRem(20);
-        }
+    a {
+      font-size: toRem(24);
+      color: colors.$color-primary--dark;
+
+      span {
+        padding-left: toRem(20);
       }
     }
   }

@@ -17,46 +17,46 @@
     flex-direction: column;
     gap: 1rem;
   }
+}
 
-  &__form {
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 33rem;
+  background-color: #fff;
+  border-radius: 1rem;
+
+  &__label {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 33rem;
-    background-color: #fff;
-    border-radius: 1rem;
+    text-transform: uppercase;
+    font-family: fonts.$font-primary;
+    font-size: toRem(14);
+    padding: 1.25rem;
+    color: colors.$color-text--light;
 
-    &__label {
-      display: flex;
-      flex-direction: column;
-      text-transform: uppercase;
-      font-family: fonts.$font-primary;
-      font-size: toRem(14);
-      padding: 1.25rem;
-      color: colors.$color-text--light;
-
-      input {
-        font-family: fonts.$font-display;
-        font-size: toRem(14);
-        color: colors.$color-text--dark;
-        outline: none;
-        border: none;
-        margin-top: toRem(8);
-        border-bottom: 1px solid colors.$color-text--dark;
-      }
-    }
-
-    &__button {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      padding: 2.5rem 1.25rem;
-      border-radius: 0 0 1rem 1rem;
-      font-size: 2.25rem;
-      color: #fff;
-      background-color: colors.$color-primary--dark;
+    input {
       font-family: fonts.$font-display;
+      font-size: toRem(14);
+      color: colors.$color-text--dark;
+      outline: none;
+      border: none;
+      margin-top: toRem(8);
+      border-bottom: 1px solid colors.$color-text--dark;
     }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 2.25rem;
+    color: #fff;
+    background-color: colors.$color-primary--dark;
+    font-family: fonts.$font-display;
   }
 }
