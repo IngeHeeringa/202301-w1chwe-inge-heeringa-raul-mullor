@@ -1,59 +1,62 @@
 @use "../variables/colors";
 @use "../variables/fonts";
-@use "../functions/torem";
+
+@function toRem($target, $context: 16) {
+  @return ($target / $context) * 1rem;
+}
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: torem.toRem(100);
+  gap: 6.25rem;
 
   &__titles {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: torem.toRem(16);
+    gap: 1rem;
   }
+}
 
-  &__form {
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 33rem;
+  background-color: #fff;
+  border-radius: 1rem;
+
+  &__label {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: torem.toRem(528);
-    background-color: #fff;
-    border-radius: torem.toRem(16);
+    text-transform: uppercase;
+    font-family: fonts.$font-primary;
+    font-size: toRem(14);
+    padding: 1.25rem;
+    color: colors.$color-text--light;
 
-    &__label {
-      display: flex;
-      flex-direction: column;
-      text-transform: uppercase;
-      font-family: fonts.$font-primary;
-      font-size: torem.toRem(14);
-      padding: torem.toRem(20);
-      color: colors.$color-text--light;
-
-      input {
-        font-family: fonts.$font-display;
-        font-size: torem.toRem(14);
-        color: colors.$color-text--dark;
-        outline: none;
-        border: none;
-        margin-top: torem.toRem(8);
-        border-bottom: torem.toRem(1) solid colors.$color-text--dark;
-      }
-    }
-
-    &__button {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      padding: torem.toRem(40) torem.toRem(20);
-      border-radius: 0 0 torem.toRem(16) torem.toRem(16);
-      font-size: torem.toRem(36);
-      color: #fff;
-      background-color: colors.$color-primary--dark;
+    input {
       font-family: fonts.$font-display;
+      font-size: toRem(14);
+      color: colors.$color-text--dark;
+      outline: none;
+      border: none;
+      margin-top: toRem(8);
+      border-bottom: 1px solid colors.$color-text--dark;
     }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2.5rem 1.25rem;
+    border-radius: 0 0 1rem 1rem;
+    font-size: 2.25rem;
+    color: #fff;
+    background-color: colors.$color-primary--dark;
+    font-family: fonts.$font-display;
   }
 }
