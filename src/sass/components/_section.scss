@@ -1,16 +1,13 @@
 @use "../variables/colors";
-
-@function toRem($target, $context: 16) {
-  @return ($target / $context) * 1rem;
-}
+@use "functions/torem";
 
 .section {
-  padding: toRem(100) toRem(16);
+  padding: torem.toRem(100) torem.toRem(16);
   background-color: #fff;
-  gap: toRem(100);
+  gap: torem.toRem(100);
 
   &__title {
-    font-size: 2.5rem;
+    font-size: torem.toRem(40);
     color: colors.$color-text--dark;
 
     &::after {
@@ -18,8 +15,8 @@
       display: block;
       background-color: colors.$color-primary--dark;
       width: 80%;
-      height: toRem(3);
-      margin: toRem(20) 0;
+      height: torem.toRem(3);
+      margin: torem.toRem(20) 0;
     }
 
     &--hero {

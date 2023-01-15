@@ -8,6 +8,7 @@
 @use "destinations/cards";
 @use "components/section";
 @use "components/navigation-buttons";
+@use "functions/torem";
 
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),

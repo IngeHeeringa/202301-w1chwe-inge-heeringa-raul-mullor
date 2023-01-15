@@ -4,13 +4,13 @@
   display: flex;
   position: relative;
   justify-content: center;
-  margin-bottom: toRem(100);
+  margin-bottom: torem.toRem(100);
 }
 
 .destinations-card {
   display: flex;
   height: torem.toRem(320);
-  width: 288px;
+  width: torem.toRem(288);
 
   &__photo {
     width: 100%;
