@@ -1,8 +1,10 @@
-.main-header {
+@use "../functions/torem";
+
+.hero__header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: toRem(24) 0;
+  padding: torem.toRem(24) 0;
 
   &__logos {
     display: flex;
