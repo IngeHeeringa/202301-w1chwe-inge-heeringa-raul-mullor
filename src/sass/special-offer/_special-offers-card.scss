@@ -3,8 +3,12 @@
 @use "../variables/fonts";
 
 .special-offers {
-  display: flex;
-  justify-content: center;
+  li {
+    &:nth-child(2),
+    &:nth-child(3) {
+      display: none;
+    }
+  }
 }
 
 .offers-card {
@@ -36,6 +40,12 @@
   &__content {
     line-height: torem.toRem(20);
   }
+}
+
+.offer-price-details {
+  display: flex;
+  flex-direction: column;
+  gap: torem.toRem(24);
 
   &__price {
     font-size: torem.toRem(18);
@@ -57,5 +67,34 @@
     width: fit-content;
     padding: torem.toRem(16) torem.toRem(24);
     border-radius: torem.toRem(12);
+  }
+
+  @media screen and (min-width: 768px) {
+    .offers-text {
+      &__price,
+      &__button {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .special-offers {
+    gap: torem.toRem(32);
+    display: flex;
+    flex-direction: row;
+
+    li {
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+  }
+
+  .offer-price-details {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

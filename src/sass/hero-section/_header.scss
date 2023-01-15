@@ -47,16 +47,5 @@
   .user-buttons {
     display: flex;
     align-items: center;
-    color: #fff;
-
-    &__login {
-      padding: torem.toRem(16) torem.toRem(24);
-    }
-
-    &__sign-up {
-      background-color: colors.$color-primary--dark;
-      padding: torem.toRem(16) torem.toRem(24);
-      border-radius: torem.toRem(12);
-    }
   }
 }

@@ -1,0 +1,14 @@
+.button {
+  padding: torem.toRem(16) torem.toRem(24);
+  background-color: colors.$color-primary--dark;
+  border-radius: torem.toRem(12);
+  color: #fff;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
