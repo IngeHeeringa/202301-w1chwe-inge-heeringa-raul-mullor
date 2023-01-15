@@ -57,3 +57,29 @@
     font-family: fonts.$font-display;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    align-items: flex-start;
+  }
+
+  .booking-form {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    border-radius: 0 torem.toRem(16) torem.toRem(16) 0;
+
+    &__button {
+      width: torem.toRem(170);
+      padding: torem.toRem(40) torem.toRem(20);
+      border-radius: 0 torem.toRem(16) torem.toRem(16) 0;
+      font-size: torem.toRem(36);
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}

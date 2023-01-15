@@ -20,14 +20,18 @@
       </div>
       <nav class="main-header__navigation main-navigation">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Explore</a></li>
-          <li><a href="">Travel</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Pricing</a></li>
+          <li><a href="#hero-section">Home</a></li>
+          <li><a href="#destinations">Explore</a></li>
+          <li><a href="#travel">Travel</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="pricing">Pricing</a></li>
         </ul>
       </nav>
-      <img src="media/menu-icon.svg" alt="Menu">
+      <div class="main-header__user-buttons user-buttons">
+        <span class="user-buttons__login"><a href="login">Login</a></span>
+        <span class="user-buttons__sign-up"><a href="sign-up">Sign up</a></span>
+      </div>
+      <img class="main-header__menu-icon" src="media/menu-icon.svg" alt="Menu">
     </header>
     <div class="hero__main hero">
       <div class="section__header section-header">
@@ -59,7 +63,7 @@
       </form>
     </div>
   </main>
-  <section class="destinations section">
+  <section class="destinations section" id="destinations">
     <div class="section__header section-header">
       <h2 class="section-header__heading">Popular Destinations</h2>
       <span class="section-header__subtitle">Most popular destinations around the world, from historical places
@@ -85,7 +89,7 @@
       <a href=""><img src="media/navbutton-right.svg" alt="Navigation button pointing right"></a>
     </div>
   </section>
-  <section class="special-offer section">
+  <section class="special-offer section" id="travel">
     <div class="section__header section-header">
       <h2 class="section-header__heading">Special Offer</h2>
       <span class="section-header__subtitle">Check out our special offer and discounts</span>
@@ -119,7 +123,7 @@
       <a href=""><img src="media/navbutton-right.svg" alt="Navigation button pointing right"></a>
     </div>
   </section>
-  <section class="our-blog section">
+  <section class="our-blog section" id="blog">
     <div class="section-header header">
       <h2 class="section-header__heading">Our Blog</h2>
       <span class="section-header__subtitle">An insight the incredible experience in the world</span>
