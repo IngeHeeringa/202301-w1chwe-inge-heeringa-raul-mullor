@@ -11,6 +11,7 @@
 @use "special-offer/special-offers-card";
 @use "components/section";
 @use "components/navigation-buttons";
+@use "footer/footer";
 @use "functions/torem";
 
 html {
@@ -26,7 +27,8 @@ body {
 }
 
 main,
-section {
+section,
+footer {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
