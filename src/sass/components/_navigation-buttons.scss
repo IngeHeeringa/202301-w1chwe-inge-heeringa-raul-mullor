@@ -1,7 +1,0 @@
-@use "../functions/torem";
-.navigation-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: torem.toRem(40);
-}
