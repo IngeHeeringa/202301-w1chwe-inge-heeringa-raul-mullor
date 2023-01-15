@@ -11,10 +11,14 @@
 @use "components/navigation-buttons";
 @use "functions/torem";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../media/main-photo-desktop.webp) no-repeat center center fixed;
-  background-size: cover;
+    url(../media/main-photo-desktop.webp) no-repeat left fixed;
+  background-size: 400%;
   font-family: fonts.$font-primary;
   font-size: torem.toRem(16);
 }
@@ -33,10 +37,10 @@ h3 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 748px) {
+@media screen and (min-width: 748px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../media/main-photo-desktop.webp) no-repeat left fixed;
-    background-size: 400%;
+      url(../media/main-photo-desktop.webp) no-repeat center 80% fixed;
+    background-size: cover;
   }
 }
