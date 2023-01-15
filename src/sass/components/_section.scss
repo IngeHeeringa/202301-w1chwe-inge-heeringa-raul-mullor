@@ -4,13 +4,10 @@
   @return ($target / $context) * 1rem;
 }
 
-section {
-  min-height: 100vh;
-}
-
 .section {
   padding: toRem(100) toRem(16);
   background-color: #fff;
+  gap: toRem(100);
 
   &__title {
     font-size: 2.5rem;
