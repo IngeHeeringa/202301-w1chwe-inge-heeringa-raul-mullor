@@ -2,12 +2,12 @@
 
 .destinations {
   display: flex;
-  position: relative;
   justify-content: center;
 }
 
 .destinations-card {
   display: flex;
+  position: relative;
   height: torem.toRem(320);
   width: torem.toRem(288);
 
