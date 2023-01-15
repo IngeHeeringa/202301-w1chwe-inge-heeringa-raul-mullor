@@ -13,12 +13,13 @@
 
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../media/main-photo-desktop.jpeg) no-repeat center center fixed;
+    url(../media/main-photo-desktop.webp) no-repeat center center fixed;
   background-size: cover;
   font-family: fonts.$font-primary;
   font-size: torem.toRem(16);
 }
 
+main,
 section {
   min-height: 100vh;
   display: flex;
@@ -35,7 +36,7 @@ h3 {
 @media screen and (max-width: 748px) {
   body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url(../media/main-photo-desktop.jpeg) no-repeat left fixed;
+      url(../media/main-photo-desktop.webp) no-repeat left fixed;
     background-size: 400%;
   }
 }
