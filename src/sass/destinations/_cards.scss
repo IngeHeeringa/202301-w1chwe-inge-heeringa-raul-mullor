@@ -4,7 +4,6 @@
   display: flex;
   position: relative;
   justify-content: center;
-  margin-bottom: torem.toRem(100);
 }
 
 .destinations-card {
@@ -35,7 +34,7 @@
 
   &__location {
     display: flex;
-    font-size: toRem(18);
-    gap: toRem(19.56);
+    font-size: torem.toRem(18);
+    gap: torem.toRem(19.56);
   }
 }

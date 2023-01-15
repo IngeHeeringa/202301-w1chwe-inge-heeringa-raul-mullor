@@ -1,12 +1,14 @@
 @use "../variables/colors";
-@use "functions/torem";
+@use "../functions/torem";
 
 .section {
   padding: torem.toRem(100) torem.toRem(16);
   background-color: #fff;
   gap: torem.toRem(100);
+}
 
-  &__title {
+.section-header {
+  &__heading {
     font-size: torem.toRem(40);
     color: colors.$color-text--dark;
 
@@ -29,7 +31,7 @@
   }
 
   &__subtitle {
-    font-size: 1.125rem;
+    font-size: torem.toRem(18);
     color: colors.$color-text--light;
 
     &--hero {
