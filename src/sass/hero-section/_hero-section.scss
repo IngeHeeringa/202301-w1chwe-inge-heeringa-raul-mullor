@@ -1,11 +1,8 @@
-$base-size: 16;
-@function toRem($target, $context: $base-size) {
+@function toRem($target, $context: 16) {
   @return ($target / $context) * 1rem;
 }
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   gap: 6.25rem;
   padding: 0 toRem(16) toRem(100);

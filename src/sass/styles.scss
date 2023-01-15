@@ -2,24 +2,27 @@
 @use "hero-section/hero-section";
 @use "hero-section/main";
 @use "hero-section/header";
+@use "our-blog/our-blog";
 @use "variables/colors";
 @use "variables/fonts";
 @use "components/section";
 @use "components/navigation-buttons";
 
-$base-size: 16;
-@function toRem($target, $context: $base-size) {
+@function toRem($target, $context: 16) {
   @return ($target / $context) * 1rem;
 }
 
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../media/main-photo.webp) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+    url(../media/main-photo-desktop.jpeg) no-repeat center center fixed;
   background-size: cover;
   font-family: fonts.$font-primary;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1,
@@ -27,4 +30,12 @@ h2,
 h3 {
   font-family: fonts.$font-display;
   font-weight: 400;
+}
+
+@media screen and (max-width: 748px) {
+  body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../media/main-photo-desktop.jpeg) no-repeat left fixed;
+    background-size: 400%;
+  }
 }
