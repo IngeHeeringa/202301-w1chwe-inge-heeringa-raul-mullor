@@ -1,0 +1,23 @@
+@use "../functions/torem";
+
+.special-offer-section {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .special-offer-section .section-header {
+    align-self: flex-end;
+    align-items: flex-end;
+
+    &__heading {
+      align-items: flex-end;
+    }
+  }
+
+  .special-offer-section__navigation-buttons {
+    position: absolute;
+    top: torem.toRem(153);
+    left: 0;
+    padding: 0 torem.toRem(16);
+  }
+}

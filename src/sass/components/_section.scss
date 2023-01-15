@@ -12,6 +12,8 @@
   flex-direction: column;
 
   &__heading {
+    display: flex;
+    flex-direction: column;
     font-size: torem.toRem(40);
     color: colors.$color-text--dark;
     width: fit-content;
