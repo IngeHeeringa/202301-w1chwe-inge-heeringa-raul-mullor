@@ -1,0 +1,39 @@
+$base-size: 16;
+@function toRem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+.destinations {
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+.destinations-card {
+  display: flex;
+  height: 320px;
+  width: 288px;
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    border-radius: toRem(16);
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    bottom: 0;
+    padding-left: toRem(20);
+    color: #fff;
+  }
+}
+
+.destinations-text {
+  &__icon {
+    color: #fff;
+  }
+}

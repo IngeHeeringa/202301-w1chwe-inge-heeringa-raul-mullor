@@ -3,6 +3,7 @@
 @use "hero-section/header";
 @use "variables/colors";
 @use "variables/fonts";
+@use "destinations/cards";
 
 body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
