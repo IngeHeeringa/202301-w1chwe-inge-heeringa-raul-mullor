@@ -5,7 +5,8 @@
 @use "our-blog/our-blog";
 @use "variables/colors";
 @use "variables/fonts";
-@use "destinations/cards";
+@use "destinations/destinations-cards";
+@use "special-offer/special-offers-card";
 @use "components/section";
 @use "components/navigation-buttons";
 @use "functions/torem";
@@ -15,6 +16,7 @@ body {
     url(../media/main-photo-desktop.jpeg) no-repeat center center fixed;
   background-size: cover;
   font-family: fonts.$font-primary;
+  font-size: torem.toRem(16);
 }
 
 section {
